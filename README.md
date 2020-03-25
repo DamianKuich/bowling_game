@@ -5,6 +5,8 @@ Simple bowling game made in C++ with OpenGL and PhysX. Bowling pins are made usi
 
   - click "r" to restart
   - click "h" to throw the ball
+  - hold "k" to move ball left
+  - hold "l" to move ball right
 
 Technologies used:
 
