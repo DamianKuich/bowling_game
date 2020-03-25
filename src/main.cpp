@@ -1648,6 +1648,11 @@ void moveHandle(float force) {
     if (!bodyHandle) return;
     bodyHandle->setLinearVelocity(PxVec3(force, 0, 0));
 }
+void moveBallLeftRight(float force)
+{
+    if (!bodyHandle) return;
+    bodyHandle->setAngularVelocity(PxVec3(force, 0, 0));
+}
 //function to reset game
 void reset() {
     bodyHandle->release();
@@ -1680,6 +1685,8 @@ void keyboard(unsigned char key, int x, int y)
     case 'd': cameraPos += 2*(cameraSide * moveSpeed); break;
     case 'a': cameraPos -= 2*(cameraSide * moveSpeed); break;
     case 'h': moveHandle(handleSpeed);  break;
+    case 'k': moveBallLeftRight(-1); break;
+    case 'l': moveBallLeftRight(1); break;
     case 'r': reset(); break;
     }
 }
