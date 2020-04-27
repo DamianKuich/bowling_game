@@ -32,7 +32,7 @@ namespace Objects {
 
     const int numPins = 10;
 
-    Properties  ball{ { 0.5, 0.5, 0.5 },{ -5, 0.5, 0 } },
+    Properties  ball{ { 0.5, 0.5, 0.5 },{ -17, 0.5, 0 } },
         pins[numPins] = {
                 { { 0.2, 0.2, 0.2 },{  15.3, 0.25, 0 } },
                 { { 0.2, 0.2, 0.2 },{  15.8, 0.25, -0.25 } },
@@ -55,7 +55,7 @@ GLuint programTexture;
 obj::Model planeModel, sphereModel, pinModel, arrowModel;
 GLuint objectTexture, groundTexture, pinTexture, arrowTexture;
 
-glm::vec3 cameraPos = glm::vec3(-13, 3, 0);
+glm::vec3 cameraPos = glm::vec3(-25, 3, 0);
 glm::vec3 cameraDir;
 glm::vec3 cameraSide;
 glm::vec3 arrowSide;
